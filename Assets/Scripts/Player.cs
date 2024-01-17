@@ -159,7 +159,7 @@ public class Player : MonoBehaviour, IAction
     IEnumerator SuperCoolDown()
     {
         _canSuperAttack = false;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
         _canSuperAttack = true;
 
     }
