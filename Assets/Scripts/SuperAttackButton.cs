@@ -26,7 +26,7 @@ public class SuperAttackButton : MonoBehaviour
     {
         if (_timerNumber <= _cooldown)
         {
-            timer.text = Convert.ToInt32(_timerNumber).ToString();
+            timer.text = Math.Round(_timerNumber, 1, MidpointRounding.AwayFromZero).ToString();
             _timerNumber += 1 * Time.deltaTime;
         }
     }
